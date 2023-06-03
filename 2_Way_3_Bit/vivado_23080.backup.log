@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun  1 10:51:21 2023
+# Process ID: 23080
+# Current directory: C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22564 C:\Users\DELL\Desktop\Nano  Processor\2_Way_3_Bit\2_Way_3_Bit.xpr
+# Log file: C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/vivado.log
+# Journal file: C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/DELL/2_Way_3_Bit' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 811.234 ; gain = 95.223
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_MUX_2_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_MUX_2_1_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.srcs/sources_1/new/MUX_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.srcs/sim_1/new/TB_MUX_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_MUX_2_1
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1d13b9a068d34f41ac1f7262544a2d98 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_2_1_behav xil_defaultlib.TB_MUX_2_1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_1 [mux_2_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_mux_2_1
+Built simulation snapshot TB_MUX_2_1_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/Desktop/Nano -notrace
+couldn't read file "C:/Users/DELL/Desktop/Nano": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun  1 10:52:21 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 838.168 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_MUX_2_1_behav -key {Behavioral:sim_1:Functional:TB_MUX_2_1} -tclbatch {TB_MUX_2_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_MUX_2_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_MUX_2_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 844.535 ; gain = 6.367
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_MUX_2_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_MUX_2_1_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.srcs/sources_1/new/MUX_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.srcs/sim_1/new/TB_MUX_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_MUX_2_1
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 870.969 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1d13b9a068d34f41ac1f7262544a2d98 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_2_1_behav xil_defaultlib.TB_MUX_2_1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_1 [mux_2_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_mux_2_1
+Built simulation snapshot TB_MUX_2_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Desktop/Nano  Processor/2_Way_3_Bit/2_Way_3_Bit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_MUX_2_1_behav -key {Behavioral:sim_1:Functional:TB_MUX_2_1} -tclbatch {TB_MUX_2_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_MUX_2_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_MUX_2_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 874.797 ; gain = 3.828
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  1 11:09:02 2023...
